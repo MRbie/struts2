@@ -10,5 +10,9 @@
 
 <h1>hello world struts2</h1>
 
+<h1>${requestScope.request_data }</h1>
+<h1>${sessionScope.session_data }</h1>
+<h1>${applicationScope.application_data }</h1>
+
 </body>
 </html>

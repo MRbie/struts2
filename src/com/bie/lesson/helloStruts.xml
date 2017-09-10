@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 声明包 -->
+    <package name="strutsPackage" extends="struts-default">
+    	<!-- 
+    		定义action
+    		name:访问路径
+    		class:类的路径
+    		method:方法名称 
+    	 -->
+    	<action name="hello" class="com.bie.lesson.StrutsHello" method="execute">
+    		<result name="success">success.jsp</result>
+    	</action>
+    </package>
+
+</struts>
