@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="dataPackage" extends="struts-default">
+		
+		<!-- 全局配置 -->
+		<!-- <global-results>
+			<result name="success">success.jsp</result>
+		</global-results> -->
+		
+		<action name="data" class="com.bie.lesson04.StrutsData" method="execute">
+			<result name="success">success.jsp</result>
+		</action>
+		
+		<action name="data2" class="com.bie.lesson04.StrutsData2" method="execute">
+			<result name="success">success.jsp</result>
+		</action>
+		
+		<action name="data3" class="com.bie.lesson04.StrutsData3" method="execute">
+			<result name="success">success.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>
+    
