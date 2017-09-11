@@ -6,7 +6,15 @@
 <struts>
 	<!-- struts在允许的时候会加载这个总配置文件：src/struts.xml -->
 	
+	<!-- 全局配置 -->
+	<!-- 修改Struts的默认访问后缀 -->
+	<constant name="struts.action.extension" value="action,do,struts"></constant>
+	
+	
 	<!-- 在总配置文件中引入其他所有的配置文件 -->
 	<include file="com/bie/lesson/helloStruts.xml"></include>
 	
+	<include file="com/bie/lesson02/strutsAction.xml"></include>
+	
+	<include file="com/bie/lesson03/strutsConfig.xml"></include>
 </struts>
