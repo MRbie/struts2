@@ -20,4 +20,5 @@
 	
 	<include file="com/bie/lesson04/strutsData.xml"></include>
 	
+	<include file="com/bie/lesson05/strutsType.xml"></include>
 </struts>
