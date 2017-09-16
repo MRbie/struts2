@@ -8,8 +8,8 @@
 	
 	<!-- 全局配置 -->
 	<!-- 修改Struts的默认访问后缀 -->
-	<constant name="struts.action.extension" value="action,do,struts,"></constant>
-	
+	<!-- <constant name="struts.action.extension" value="action,do,struts,"></constant> -->
+	<include file="constant.xml"></include>
 	
 	<!-- 在总配置文件中引入其他所有的配置文件 -->
 	<include file="com/bie/lesson/helloStruts.xml"></include>
@@ -21,4 +21,6 @@
 	<include file="com/bie/lesson04/strutsData.xml"></include>
 	
 	<include file="com/bie/lesson05/strutsType.xml"></include>
+	
+	<include file="com/bie/lesson06/strutsUpload.xml"></include>
 </struts>
