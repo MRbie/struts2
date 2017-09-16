@@ -18,7 +18,7 @@ public class StrutsType2 extends ActionSupport{
 	private static final long serialVersionUID = 1L;
 
 	//第二种方式，请求数据封装,对象类型一定要给get方法
-	private User user = new User();
+	private User user;
 	public User getUser() {
 		return user;
 	}
