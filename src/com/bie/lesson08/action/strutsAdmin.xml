@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="adminPackage" extends="struts-default">
+	
+		<!-- 错误放到全局的位置 -->
+		<global-results>
+			<result name="error">error.jsp</result>
+		</global-results>
+		
+		
+		<action name="admin_*" class="com.bie.lesson08.action.AdminAction" method="{1}">
+			<!-- 1：第一步，登陆失败跳转的页面,登陆失败跳转到login.jsp -->
+			<result name="input">login.jsp</result>
+			
+			<!-- 登陆成功跳转的页面，登陆成功跳转到list.jsp,前提是查询出数据再跳转哦 -->
+			<!-- 2，第二步，登陆成功重定向到这个查询数据的页面，之后再进行跳转到显示数据的页面 -->
+			<result name="success" type="redirectAction">admin_list</result>
+			
+			<!-- 3，第三步，当查询出数据，跳转到显示数据的页面 -->
+			<result name="list">/WEB-INF/list.jsp</result>
+			
+			<!-- 登陆错误跳转的页面，登陆错误跳转的错误的页面,错误放到全局 -->
+			<!-- <result name="error">error.jsp</result> -->
+		</action>
+		
+	</package>
+
+</struts>
+    

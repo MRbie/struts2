@@ -12,17 +12,20 @@
 	<include file="constant.xml"></include>
 	
 	<!-- 在总配置文件中引入其他所有的配置文件 -->
-	<include file="com/bie/lesson/helloStruts.xml"></include>
 	
-	<include file="com/bie/lesson02/strutsAction.xml"></include>
+	<!-- <include file="com/bie/lesson/helloStruts.xml"></include> -->
 	
-	<include file="com/bie/lesson03/strutsConfig.xml"></include>
+	<!-- <include file="com/bie/lesson02/strutsAction.xml"></include> -->
 	
-	<include file="com/bie/lesson04/strutsData.xml"></include>
+	<!-- <include file="com/bie/lesson03/strutsConfig.xml"></include> -->
 	
-	<include file="com/bie/lesson05/strutsType.xml"></include>
+	<!-- <include file="com/bie/lesson04/strutsData.xml"></include> -->
 	
-	<include file="com/bie/lesson06/strutsUpload.xml"></include>
+	<!-- <include file="com/bie/lesson05/strutsType.xml"></include> -->
 	
-	<include file="com/bie/lesson07/strutsInterceptor.xml"></include>
+	<!-- <include file="com/bie/lesson06/strutsUpload.xml"></include> -->
+	
+	<!-- <include file="com/bie/lesson07/strutsInterceptor.xml"></include> -->
+	
+	<include file="com/bie/lesson08/action/strutsAdmin.xml"></include>
 </struts>
