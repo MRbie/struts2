@@ -6,6 +6,19 @@
 <struts>
 	<package name="adminPackage" extends="struts-default">
 	
+		<!-- 拦截器配置 -->
+		<interceptors>
+			<interceptor name="loginCheck" class="com.bie.lesson08.utils.AdminInterceptor"></interceptor>
+			<interceptor-stack name="myStack">
+				<!-- 默认的拦截器配置 -->
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="loginCheck"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<!-- 执行拦截器 ，当前包下所有的action都执行mystack栈-->
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		
 		<!-- 错误放到全局的位置 -->
 		<global-results>
 			<result name="error">error.jsp</result>

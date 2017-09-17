@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<h1>欢迎您：${loginInfo.adminName }</h1>
 <table cellpadding="10" cellspacing="10" align="center">
     <tr>
         <th>编号</th>
