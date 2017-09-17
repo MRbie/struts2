@@ -13,12 +13,30 @@
 			<interceptor-ref name="defaultStack">
 				<!-- 限制运行的文件的扩展名称 -->
 				<param name="fileUpload.allowedExtensions">txt,jpg,gif,png</param>
+				<!-- 限制运行的类型 ,与上面同时使用，取交集-->		
+				<!-- <param name="fileUpload.allowedTypes">text/plain</param> -->
 			</interceptor-ref>
-			
+				
 			<result name="success">success.jsp</result>
 			<result name="input">error.jsp</result>
 		</action>
 		
+		<action name="file_*" class="com.bie.lesson06.StrutsDownload" method="{1}">
+			<!-- 下载列表 -->
+			<result name="list">list.jsp</result>
+			<!-- 下载操作 -->
+			<result name="download" type="stream">
+			   <!-- 调用action中返回流的方法 ,固定格式-->
+			   <!-- 允许下载的文件的类型：指定为所有的二进制的文件类型，去tomcat的web.xml里面搜索.exe -->    
+               <param name="contentType">application/octet-stream</param>
+               <!-- 对应的就是Action种的属性，返回流的属性，【其实就是getAttrInputStream()】 -->
+               <param name="inputName">attrInputStream</param>
+               <!-- 下载头，包括：浏览器显示的文件名,对应这个方法 getDownFileName()-->
+               <param name="contentDisposition">attachment;filename="${downFileName}"</param>
+               <!-- 缓冲区大小设置 -->
+               <param name="bufferSize">1024</param>
+			</result>
+		</action>
 		
 	</package>
 
