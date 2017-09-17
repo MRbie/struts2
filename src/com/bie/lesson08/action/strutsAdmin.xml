@@ -4,6 +4,10 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
+	
+	<!-- 通过常量加载资源文件,value值当存在多个的时候使用都好隔开 -->
+	<constant name="struts.custom.i18n.resources" value="com.bie.lesson08.config.msg"></constant>
+
 	<package name="adminPackage" extends="struts-default">
 	
 		<!-- 拦截器配置 -->
