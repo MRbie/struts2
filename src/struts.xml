@@ -23,4 +23,6 @@
 	<include file="com/bie/lesson05/strutsType.xml"></include>
 	
 	<include file="com/bie/lesson06/strutsUpload.xml"></include>
+	
+	<include file="com/bie/lesson07/strutsInterceptor.xml"></include>
 </struts>
