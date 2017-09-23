@@ -39,7 +39,28 @@
 <!-- 获取请求的参数数据 -->
 <s:property value="#parameters.userName"/>
      
+<!-- 
+	迭代标签的学习 ，用于对集合进行迭代。这里的集合包含List，Set和数组
+	value可选属性，指定被迭代的集合，如果没有该属性，则使用VlaueStack栈顶集合。
+	var可选属性，应用变量的名称。
+	status可选属性，该属性指定迭代时的iterator ststus实例。
+-->
+<s:iterator value="#request.list" var="user" status="it">
+	<s:property value="#it.count"/>
+	<s:property value="#user.id"/>
+	<s:property value="#user.name"/>
+	<s:property value="#it.even"/><br/>
+	
+</s:iterator>
 
+<br/><br/>
+<s:iterator value="#request.map" var="user" status="it">
+	<s:property value="#it.count"/>
+	<s:property value="#user.key"/>
+	<s:property value="#user.value.id"/>
+	<s:property value="#user.value.name"/><br/>
+	
+</s:iterator>
 
 <!-- struts的调试标签：可以观测值栈数据 -->
 <s:debug></s:debug>

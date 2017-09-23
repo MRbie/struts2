@@ -12,6 +12,10 @@
 			<result name="success">success.jsp?userName=${user.name}</result>
 			
 		</action>
+		
+		<action name="iterator" class="com.bie.lesson09.IteratorAction">
+			<result name="success">success.jsp</result>
+		</action>
 	</package>
 
 </struts>
