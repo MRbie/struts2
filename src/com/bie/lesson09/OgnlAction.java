@@ -25,8 +25,15 @@ public class OgnlAction extends ActionSupport{
 	private static final long serialVersionUID = 1L;
 	// 全局元素，根元素值
 	private User user = new User(1, "tom");
-	
-	
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+
+
 	@Override
 	public String execute() throws Exception {
 		ActionContext ac = ActionContext.getContext();

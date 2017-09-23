@@ -9,6 +9,9 @@ public class User {
 
 	private int id;
 	private String name;
+	
+	private Address address = new Address("河南省","郑州市");
+	
 	public int getId() {
 		return id;
 	}
@@ -28,6 +31,13 @@ public class User {
 	}
 	public User() {
 		super();
+	}
+	
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	
 	
