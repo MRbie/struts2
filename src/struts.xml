@@ -27,5 +27,13 @@
 	
 	<!-- <include file="com/bie/lesson07/strutsInterceptor.xml"></include> -->
 	
-	<include file="com/bie/lesson08/action/strutsAdmin.xml"></include>
+	<!-- <include file="com/bie/lesson08/action/strutsAdmin.xml"></include> -->
+	
+	<include file="com/bie/lesson09/strutsOgnl.xml"></include>
+	
+	
+	
+	
+	
+	
 </struts>
