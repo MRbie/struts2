@@ -6,8 +6,8 @@
 <struts>
 	<package name="checkXmlPackage" extends="struts-default">
 		<action name="data_*" class="com.bie.lesson11.CheckXmlAction" method="{1}">
-			<result name="success">success2.jsp</result>
-			<result name="input">error.jsp</result>
+			<result name="success">/success2.jsp</result>
+			<result name="input">/error.jsp</result>
 			<!-- <result name="list">success2.jsp</result> -->
 		</action>		
 		

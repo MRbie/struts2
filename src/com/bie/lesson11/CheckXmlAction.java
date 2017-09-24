@@ -16,7 +16,7 @@ public class CheckXmlAction extends ActionSupport{
 	private static final long serialVersionUID = 1L;
 	
 	//封装请求数据
-	private User user;
+	private User user = new User();
 	public void setUser(User user) {
 		this.user = user;
 	}
@@ -26,7 +26,7 @@ public class CheckXmlAction extends ActionSupport{
 	
 	
 	//业务方法
-	public String checkData(){
+	public String checkXmlData(){
 		
 		System.out.println(user);
 		return SUCCESS;
