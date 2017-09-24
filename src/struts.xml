@@ -31,9 +31,9 @@
 	
 	<!-- <include file="com/bie/lesson09/strutsOgnl.xml"></include> -->
 	
-	<include file="com/bie/lesson10/strutsCheck.xml"></include>
+	<!-- <include file="com/bie/lesson10/strutsCheck.xml"></include> -->
 	
-	
+	<include file="com/bie/lesson11/strutsXmlCheck.xml"></include>
 	
 	
 </struts>
