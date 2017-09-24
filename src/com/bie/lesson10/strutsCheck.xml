@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="checkPackage" extends="struts-default">
+		<action name="data_*" class="com.bie.lesson10.CheckAction" method="{1}">
+			<result name="success">success2.jsp</result>
+			<result name="input">error.jsp</result>
+			<result name="list">success2.jsp</result>
+		</action>		
+		
+	</package>
+
+</struts>
+    
