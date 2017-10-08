@@ -18,7 +18,7 @@
 
 <!-- 显示的是Struts2在运行时期产生的所有错误 -->
 <!-- 方式一 -->
-<s:fielderror></s:fielderror>
+<%-- <s:fielderror></s:fielderror> --%>
 
 <%-- <s:fielderror fieldName="user.name"></s:fielderror>
 <s:fielderror fieldName="user.password"></s:fielderror>
@@ -27,6 +27,7 @@
 
 <form action="${pageContext.request.contextPath}/data_checkXmlData.action" method="post">
 	账号：<input type="text" name="user.name"/>
+		<!-- 方式二 -->	
 		<s:fielderror fieldName="user.name"></s:fielderror><br/>
 	密码：<input type="password" name="user.password"/>
 		<s:fielderror fieldName="user.password"></s:fielderror><br/>

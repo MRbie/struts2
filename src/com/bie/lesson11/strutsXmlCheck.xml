@@ -5,9 +5,14 @@
 
 <struts>
 	<package name="checkXmlPackage" extends="struts-default">
+		<!-- 注册失败跳转到注册页面，显示失败信息 -->
+		<global-results>
+			<result name="input">/dataXmlCheck.jsp</result>
+		</global-results>
+		
 		<action name="data_*" class="com.bie.lesson11.CheckXmlAction" method="{1}">
 			<result name="success">/success2.jsp</result>
-			<result name="input">/error.jsp</result>
+			<!-- <result name="input">/error.jsp</result> -->
 			<!-- <result name="list">success2.jsp</result> -->
 		</action>		
 		
